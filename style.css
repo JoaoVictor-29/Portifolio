@@ -580,4 +580,36 @@ html {
     gap: 40px;
     width: 88%;
   }
+
+  .conteudo-sobre img {
+    width: 280px;
+    height: 320px;
+  }
+
+  .texto-sobre {
+    max-width: 100%;
+  }
+
+  .cards-servicos {
+    flex-direction: column;
+  }
+
+  .cards-servicos .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .cards-projetos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+
+  .card-maior {
+    grid-row: auto;
+  }
+
+  .cards-projetos .card-maior img {
+    height: 220px;
+  }
 }
