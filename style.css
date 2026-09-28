@@ -2,7 +2,6 @@
 body {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
-  background-color: red;
 }
 
 html {
@@ -611,5 +610,33 @@ html {
 
   .cards-projetos .card-maior img {
     height: 220px;
+  }
+
+  .cards-processo {
+    flex-direction: column;
+  }
+
+  .card-processo {
+    border-left: none;
+    border-bottom: 1px solid #bdbbbb;
+  }
+
+  .card-processo:last-child {
+    border-bottom: none;
+  }
+
+  .conteudo-contato {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .contatos {
+    width: 100%;
+  }
+
+  .botao-contato {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
