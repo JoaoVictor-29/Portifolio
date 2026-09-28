@@ -1,0 +1,563 @@
+/*configs gerais----------------------------------------------------*/
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /*aqui faz a página deslizar em vez de pular quando escolher no cabecalho*/
+}
+/*configs gerais----------------------------------------------------*/
+
+/*Cabeçalho---------------------------------------------------------*/
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: gray;
+}
+
+.esquerdo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.esquerdo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.centro {
+  display: flex;
+  gap: 15px;
+}
+
+.centro a {
+  color: gray;
+  text-decoration: none; /*remove sublinhado dos links*/
+}
+
+.centro a:hover {
+  color: rgb(
+    152,
+    103,
+    197
+  ); /*quando o cursor para sobre um link no menu ele fica roxo*/
+}
+/*Cabeçalho---------------------------------------------------------*/
+
+/*seção de Apresentação----------------------------------------------*/
+.apresentacao {
+  background-image: url(imgs/FundoApresentação.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 0 10%;
+}
+
+.texto_apresentacao {
+  color: rgb(152, 103, 197);
+  font-weight: bold;
+}
+
+.branco {
+  color: white;
+}
+
+.roxo {
+  color: rgb(152, 103, 197);
+  font-weight: bold;
+}
+
+.texto_grande {
+  font-size: 5rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.texto-medio {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.subtitulo {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+
+.apresentacao-desc {
+  margin-bottom: 50px;
+  color: rgb(135, 131, 131);
+}
+
+.apresentacao-botao {
+  display: flex;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.botao-roxo {
+  padding: 13px 18px;
+  background-color: rgb(152, 103, 197);
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.botao-transparente {
+  padding: 13px 18px;
+  background-color: transparent;
+  border: 1px solid #555;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+/*seção de Apresentação----------------------------------------------*/
+
+/*estatisticas na apresentação----------------------------------------*/
+.estatisticas {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; /*nao criar barra de rolagem horiz*/
+}
+
+.alinhar_texto_numero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 6px;
+}
+
+.numero {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.descricao {
+  color: gray;
+}
+/*estatisticas na apresentação----------------------------------------*/
+
+/*seção Sobre mim----------------------------------------------------*/
+.sobre-mim {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.conteudo-sobre {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  max-width: 1050px;
+  width: 100%;
+}
+
+.texto-sobre {
+  max-width: 550px;
+}
+
+.conteudo-sobre img {
+  width: 350px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  outline: 2px solid rgb(152, 103, 197);
+  outline-offset: 8px;
+}
+/*seção Sobre mim----------------------------------------------------*/
+
+/*seção de Serviços---------------------------------------------------*/
+.servicos {
+  min-height: 100vh;
+  padding: 80px 10%;
+  box-sizing: border-box;
+  background-color: rgb(222, 227, 245);
+}
+
+.cabecalho-servicos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.texto-servicos {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 260px;
+  margin: 0;
+}
+
+.cards-servicos {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.card {
+  flex: 1; /*faz os 3 ocuparem larguras semelhantes*/
+  width: 10rem;
+  height: 20rem;
+  padding: 24px;
+  background-color: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.card-icone {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0efff;
+  color: rgb(152, 103, 197);
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin-top: 20px;
+  margin-bottom: 10px; /*espaço titulo-descricao*/
+}
+
+.card p {
+  color: gray;
+  line-height: 1.5;
+  font-size: 0.85rem;
+}
+
+.card a {
+  color: rgb(152, 103, 197);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-roxo {
+  background-color: rgb(152, 103, 197);
+  color: white;
+  border-radius: 8px;
+  flex: 1; /*faz os 3 ocuparem larguras semelhantes*/
+  padding: 24px;
+}
+
+.card-roxo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-roxo p {
+  color: white;
+  font-size: 0.85rem;
+}
+
+.card-roxo .card-icone {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+/*seção de Serviços---------------------------------------------------*/
+
+/*seção de Projetos---------------------------------------------------*/
+.projetos {
+  min-height: 100vh;
+  padding: 80px 10%;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+
+.cabecalho-projetos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/*.cabecalho-projetos h2{
+  margin-top: 0;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}*/
+
+.texto-projetos {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 260px;
+  margin: 0;
+}
+
+.cards-projetos {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 12px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.card-projeto {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 7px;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+}
+
+.card-maior {
+  grid-row: 1 / 3;
+}
+
+.card-projeto img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-maior img {
+  height: 300px;
+}
+
+.inf-projeto {
+  padding: 14px 16px 18px;
+}
+
+.tema-projeto {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(152, 103, 197);
+  letter-spacing: 0.5px;
+}
+
+.inf-projeto h3 {
+  margin: 5px 0;
+  font-size: 1.5rem;
+}
+
+.inf-projeto p {
+  margin: 0;
+  font-size: 1rem;
+  color: gray;
+  line-height: 1.4;
+}
+/*seção de Projetos---------------------------------------------------*/
+
+/*seção "meu processo"*/
+.processo {
+  min-height: 80vh;
+  padding: 80px 10%;
+  box-sizing: border-box;
+  background-color: rgb(222, 227, 245);
+}
+
+.cabecalho-processo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.texto-projetos {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 260px;
+  margin: 0;
+}
+
+.cards-processo {
+  display: flex;
+  border-top: 1px solid #bdbbbb;
+  margin-top: 40px;
+}
+
+.card-processo {
+  flex: 1;
+  padding: 30px 20px;
+  border-left: 1px solid #bdbbbb;
+  box-sizing: border-box;
+}
+.card-processo:first-child {
+  border-left: none;
+}
+
+.numero-card {
+  color: rgb(152, 103, 197);
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.card-processo h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.card-processo p {
+  color: gray;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0;
+}
+/*seção "meu processo"*/
+
+/*seção contato*/
+.contato {
+  background-image:
+    linear-gradient(rgba(55, 34, 74, 0.85), rgba(55, 34, 74, 0.85)),
+    url(imgs/foto-contato.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  padding: 60px 10%;
+  box-sizing: border-box;
+}
+
+.conteudo-contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.texto-principal {
+  max-width: 550px;
+}
+
+.contato-desc {
+  margin-bottom: 50px;
+  color: rgb(224, 223, 223);
+}
+
+.botao-contato {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 7px;
+  text-decoration: none;
+  color: white;
+}
+
+.contato-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.texto-contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-contato small {
+  font-size: 0.65rem;
+  color: #ccc;
+}
+
+.texto-contato strong {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.contato-seta {
+  margin-left: auto;
+  color: #ccc;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 360px;
+}
+
+.texto_grande-contato {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+/*seção contato*/
+
+/*seçao de rodapé*/
+.rodape {
+  background-color: #141426;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  box-sizing: border-box;
+}
+
+.rodape p {
+  font-size: 0.65rem;
+  margin: 0;
+  color: #aaa;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 8px;
+}
+
+.redes-sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.6rem;
+}
+/*seçao de rodapé*/
+
+/*cores de texto-----------------------------------------------------*/
+.cinza {
+  color: gray;
+}
+/*cores de texto-----------------------------------------------------*/
+
+/*responsividade---------------------------------------------------*/
+@media(max-width: 768px) {
+  header{
+    padding: 20px 5%;
+  }
+
+  .centro{
+    gap: 20px;
+  }
+
+  .centro a{
+    font-size: 0.85rem;
+  }
+}
