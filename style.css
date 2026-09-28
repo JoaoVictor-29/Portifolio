@@ -549,39 +549,81 @@ html {
 
 /*responsividade---------------------------------------------------*/
 @media (max-width: 768px) {
-  header {
-    padding: 20px 5%;
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Apresentação */
+  .apresentacao {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 6% 50px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .cabecalho {
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 
   .centro {
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 
   .centro a {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+  }
+
+  .direita {
+    font-size: 0.8rem;
   }
 
   .texto_grande {
-    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-size: clamp(2.7rem, 13vw, 4rem);
   }
 
   .texto-medio {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .apresentacao-desc br {
+    display: none;
   }
 
   .estatisticas {
     flex-wrap: wrap;
-    gap: 25px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+
+  /* Sobre mim */
+  .sobre-mim {
+    padding: 60px 6%;
   }
 
   .conteudo-sobre {
+    width: 100%;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
-    width: 88%;
   }
 
   .conteudo-sobre img {
     width: 280px;
+    max-width: 100%;
     height: 320px;
   }
 
@@ -589,8 +631,25 @@ html {
     max-width: 100%;
   }
 
+
+  /* Serviços */
+  .servicos {
+    padding: 60px 6%;
+  }
+
+  .cabecalho-servicos {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .texto-servicos {
+    max-width: 100%;
+  }
+
   .cards-servicos {
     flex-direction: column;
+    gap: 15px;
   }
 
   .cards-servicos .card {
@@ -598,18 +657,59 @@ html {
     height: auto;
   }
 
+  .card p br {
+    display: none;
+  }
+
+
+  /* Projetos */
+  .projetos {
+    padding: 60px 6%;
+  }
+
+  .cabecalho-projetos {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .texto-projetos {
+    max-width: 100%;
+  }
+
   .cards-projetos {
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 15px;
+    margin-top: 30px;
   }
 
   .card-maior {
     grid-row: auto;
   }
 
-  .cards-projetos .card-maior img {
+  .card-projeto {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cards-projetos .card-projeto img {
+    width: 100%;
     height: 220px;
+    object-fit: cover;
+  }
+
+
+  /* Processo */
+  .processo {
+    padding: 60px 6%;
+  }
+
+  .cabecalho-processo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
   }
 
   .cards-processo {
@@ -625,10 +725,28 @@ html {
     border-bottom: none;
   }
 
+  .card-processo p br {
+    display: none;
+  }
+
+
+  /* Contato */
+  .contato {
+    width: 100%;
+    min-height: 70vh;
+    padding: 60px 6%;
+    background-size: cover;
+    background-position: center;
+  }
+
   .conteudo-contato {
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
+  }
+
+  .texto_grande-contato {
+    font-size: clamp(2.5rem, 11vw, 4rem);
   }
 
   .contatos {
@@ -637,6 +755,19 @@ html {
 
   .botao-contato {
     width: 100%;
-    box-sizing: border-box;
+  }
+
+  .contato-desc br {
+    display: none;
+  }
+
+
+  /* Rodapé */
+  .rodape {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 6%;
+    text-align: center;
   }
 }
