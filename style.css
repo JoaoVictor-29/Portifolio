@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
+  background-color: red;
 }
 
 html {
@@ -548,16 +549,35 @@ html {
 /*cores de texto-----------------------------------------------------*/
 
 /*responsividade---------------------------------------------------*/
-@media(max-width: 768px) {
-  header{
+@media (max-width: 768px) {
+  header {
     padding: 20px 5%;
   }
 
-  .centro{
+  .centro {
     gap: 20px;
   }
 
-  .centro a{
+  .centro a {
     font-size: 0.85rem;
+  }
+
+  .texto_grande {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .texto-medio {
+    font-size: 2.2rem;
+  }
+
+  .estatisticas {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .conteudo-sobre {
+    flex-direction: column;
+    gap: 40px;
+    width: 88%;
   }
 }
