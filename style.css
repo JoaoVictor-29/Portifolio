@@ -549,8 +549,6 @@ html {
 
 /*responsividade---------------------------------------------------*/
 @media (max-width: 768px) {
-
-
   * {
     box-sizing: border-box;
   }
@@ -608,6 +606,24 @@ html {
     gap: 20px;
   }
 
+  .botao-roxo {
+    padding: 5px 10px;
+    background-color: rgb(152, 103, 197);
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .botao-transparente {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 0.5px solid #555;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
 
   /* Sobre mim */
   .sobre-mim {
@@ -630,7 +646,6 @@ html {
   .texto-sobre {
     max-width: 100%;
   }
-
 
   /* Serviços */
   .servicos {
@@ -660,7 +675,6 @@ html {
   .card p br {
     display: none;
   }
-
 
   /* Projetos */
   .projetos {
@@ -700,7 +714,6 @@ html {
     object-fit: cover;
   }
 
-
   /* Processo */
   .processo {
     padding: 60px 6%;
@@ -728,7 +741,6 @@ html {
   .card-processo p br {
     display: none;
   }
-
 
   /* Contato */
   .contato {
@@ -760,7 +772,6 @@ html {
   .contato-desc br {
     display: none;
   }
-
 
   /* Rodapé */
   .rodape {
