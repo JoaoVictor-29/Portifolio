@@ -606,23 +606,10 @@ html {
     gap: 20px;
   }
 
-  .botao-roxo {
-    padding: 5px 10px;
-    background-color: rgb(152, 103, 197);
-    border-radius: 3px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-
+  .botao-roxo,
   .botao-transparente {
-    padding: 5px 10px;
-    background-color: transparent;
-    border: 0.5px solid #555;
-    border-radius: 3px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+    padding: 8px 12px;
+    font-size: 0.85rem;
   }
 
   /* Sobre mim */
