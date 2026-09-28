@@ -189,7 +189,52 @@ html {
 }
 
 .tag-tecnologias {
-  
+  display: flex;
+  border: 1px solid aliceblue;
+  border-radius: 4px;
+  color: gray;
+  font-size: 0.75rem;
+  gap: 8px;
+}
+
+.tag-tecnologias span {
+  padding: 7px 10px;
+  background-color: #ccc;
+  border: 1px solid #e4e5eb;
+  border-radius: 4px;
+  color: gray;
+  font-size: 0.75rem;
+}
+
+.img-sobre {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ponto-verde-status {
+  width: 8px;
+  height: 8px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.status-sobre {
+  position: absolute;
+  bottom: 50px;
+  left: 0px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  background-color: white;
+  border-radius: 5px;
+
+  font-size: 0.75rem;
+  color: #555;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 /*seção Sobre mim----------------------------------------------------*/
 
