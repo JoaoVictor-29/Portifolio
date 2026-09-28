@@ -117,6 +117,14 @@ html {
   color: white;
   font-weight: bold;
 }
+
+.seta-baixo {
+  font-size: 25px;
+  color: gray;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
 /*seção de Apresentação----------------------------------------------*/
 
 /*estatisticas na apresentação----------------------------------------*/
@@ -178,6 +186,10 @@ html {
   flex-shrink: 0;
   outline: 2px solid rgb(152, 103, 197);
   outline-offset: 8px;
+}
+
+.tag-tecnologias {
+  
 }
 /*seção Sobre mim----------------------------------------------------*/
 
