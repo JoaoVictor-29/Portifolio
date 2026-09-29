@@ -51,7 +51,7 @@ html {
 
 /*seção de Apresentação----------------------------------------------*/
 .apresentacao {
-  background-image: url(imgs/FundoApresentação.png);
+  background-image: url(imgs/img-apresentação.png);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -207,7 +207,6 @@ html {
 }
 
 .img-sobre {
-  position: relative;
   flex-shrink: 0;
 }
 
@@ -219,7 +218,6 @@ html {
 }
 
 .status-sobre {
-  position: absolute;
   bottom: 50px;
   left: 0px;
 
